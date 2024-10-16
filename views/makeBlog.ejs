@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Blog</title>
+    
+</head>
+<body>
+    <%-include("partials/header.ejs")%>
+    <div class="px-4 py-5 my-5 text-center mine">
+    <%if(locals.t){%>
+        <form action="/update" method="POST">
+            <label for="Title" class="kaushan-script-regular">Title</label><br>
+            <input name="Title" type="text" class="feedback-input some" value="<%=t%>" placeholder="Limit: 50 charchters" /><br><br><br>
+            <label for="Description" class="kaushan-script-regular">Description</label><br>
+            <input name="Description" type="text" class="feedback-input some" value="<%=d%>"></input><br><br><br>
+            <label for="Content" class="kaushan-script-regular">Content</label><br>
+            <textarea name="Content" class="feedback-input some"><%=c%></textarea><br><br><br>
+            <input type="submit" value="PUBLISH" class="workbench-new doit yo" />
+          </form>
+
+    <%}else{%>
+        <form action="/blog" method="POST">
+            <label for="Title" class="kaushan-script-regular some" >Title</label><br>
+            <input name="Title" type="text" class="feedback-input some" placeholder="Limit: 50 charchters" /><br><br><br>
+            <label for="Description" class="kaushan-script-regular">Description</label><br>
+            <input name="Description" type="text" class="feedback-input some" placeholder="Add Description" /><br><br><br>
+            <label for="Content" class="kaushan-script-regular">Content</label><br>
+            <textarea name="Content" class="feedback-input some" placeholder="Add Content"></textarea><br><br><br>
+            <input type="submit" value="PUBLISH" class="workbench-new doit yo"/>
+          </form>
+
+    <%}%>
+</div>
+
+    <%-include("partials/footer.ejs")%>
+</body>
+</html>

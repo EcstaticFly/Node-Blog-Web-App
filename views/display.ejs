@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <%-include("partials/header.ejs")%>
+    <div class="px-4 py-5 my-5 text-center mine">
+
+    <div class="dis">
+    <h6 class="kaushan-script-regular">Title: </h6><h1 class="caveat-new spec"><%=title%></h1>
+    <h6 class="kaushan-script-regular">Description: </h6><p class="caveat-new spec"><%=body%></p>
+    <h6 class="kaushan-script-regular">Content: </h6><p class="caveat-new spec"><%=content%></p>
+    </div>
+    
+    <h6 class="kaushan-script-regular">Date Created: <%=date%></h6><br>
+    <div class="container">
+    <form action="/" method="GET" class="element"><input type="submit" value="Home" class="workbench-new doit yo"></form>
+    <form action="/edit" method="POST"><button value="<%=title%>" name="edi" class="workbench-new doit yo">Edit</button></form>
+    </div>
+
+</div>
+
+    <%-include("partials/footer.ejs")%>
+    
+</body>
+</html>

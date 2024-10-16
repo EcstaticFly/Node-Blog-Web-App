@@ -1,0 +1,80 @@
+.container{
+    display: flex;
+    justify-content: center;
+    height: 3.5rem;
+    width: 50%;
+    height: 50%;
+}
+.mine{
+    margin-bottom: 100dvh!important;
+}
+.rubik-scribble-regular {
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: solid;
+    color: white;
+}
+.space{
+    margin-bottom: 1rem;
+    height: 2rem;
+    width: 25%;
+}
+.some{
+    width: 45%;
+}
+.needed li{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.doit{
+    border: 0rem;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    height: fit-content;
+    background: none;
+}
+.yo{
+    border: 0.01rem dashed white;
+    border-radius: 10%;
+}
+.spec{
+    color: blanchedalmond;
+}
+.e2{
+    margin-left: 100%;
+}
+.element{
+    margin-right: 1.3rem;
+}
+.workbench-new{
+    font-family: "Workbench", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0;
+}
+.caveat-new{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kaushan-script-regular {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+h6{
+    text-decoration: underline;
+}
+h1{
+    font-size: 3.5rem;
+}
+p{
+    font-size: 2.5rem;
+}
